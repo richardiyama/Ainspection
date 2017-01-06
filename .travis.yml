@@ -1,0 +1,17 @@
+languague: angular
+
+angular:
+
+   - 1.5.8
+   - 1.5.9
+
+before-script:
+
+  - bower install --no-interaction
+
+
+
+script:
+
+  - JavaScript/app.js
+

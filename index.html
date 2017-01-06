@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="RichardPhotoFlickr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="icon" type="image/png" href="Images/favicon.gif">
+	<title>Rich Photo Flickr</title>
+	<base href="/">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-material.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-animates.css">
+	<link rel="stylesheet" type="text/css" href="css/animates.css">
+	
+</head>
+<body ng-controller="PhotoController">
+	<header>
+		<form ng-submit="search()">
+			<h1><a ui-sref="home">Rich Photo Flickr</a></h1>
+			<div class="holder">
+				<select class="searchBy" ng-change="search()" ng-init="search.by = search.by || 'all'" ng-model="search.by">
+					<option value="all">All</option>
+					<option value="tag">Tag</option>
+				</select>
+				<input type="text" class="search" placeholder="Search" ng-keydown="showPredictedText()" ng-model="search.term">
+				<button class="search-btn" ng-click="search()">Search</button>
+			</div>
+		</form>
+	</header>
+	<div ui-view id="container"></div>
+	<!-- start bower_components -->
+	<script  src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script  src="bower_components/angular/angular.min.js"></script>
+	<script  src="bower_components/angular-animate/angular-animate.min.js"></script>
+	<script  src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script  src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+	<!-- end bower_components -->
+	<script src="JavaScript/app.js"></script>
+	<script src="JavaScript/homeController.js"></script>
+	<script src="JavaScript/search.js"></script>
+	<script src="JavaScript/searchController.js"></script>
+</body>
+</html>
