@@ -3,10 +3,10 @@
   "authors": [
     "Richard Iyama <richardiyama@yahoo.com>"
   ],
-  "description": "",
-  "main": "",
+  "description": "Flickr-Search(Asinpection Assignment)",
+  "main": "index.html",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "protected-lowlands-63301.herokuapp.com",
   "ignore": [
     "**/.*",
     "node_modules",
