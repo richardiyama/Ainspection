@@ -2,6 +2,7 @@
 	'use strict';
 	var app = angular.module('RichardPhotoFlickr');
 	
+	
 	app.controller('HomeController', ['$scope','$animate', function(scope,animate){
 		var header = angular.element(document.querySelector('header')),
 			container = angular.element(document.querySelector('#container'));
