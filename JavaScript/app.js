@@ -1,5 +1,6 @@
 (function(){
 	'use strict';
+	
 	var app = angular.module('RichardPhotoFlickr', ['ui.router','ngAnimate','infinite-scroll']);
 	
 	/*start router*/
