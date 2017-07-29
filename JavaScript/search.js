@@ -9,6 +9,7 @@
 			this.busy = false;	// this let us know if is it still searching
 			this.page = 1;
 		};
+		
 		Flickr.prototype.nextPage = function() {
 			if(stateParams.q){
 				var it = this,
